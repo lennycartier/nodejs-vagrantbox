@@ -14,7 +14,7 @@ class system-upgrade {
 
 class packages {
     exec { 'apt-get install':
-        command => 'apt-get install -y nodejs',
+        command => 'apt-get install -y nodejs npm',
     }
 }
 
