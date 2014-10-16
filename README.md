@@ -12,6 +12,6 @@ This is a nodejs vagrant box with the following features :
 
 - install latest vagrant (http://www.vagrantup.com) 
 - install latest virtualbox (http://www.virtualbox.org)
-- clone this repo and '''cd''' into it 
-- do a '''vagrant up''' then '''vagrant provision'''
-- ssh into the box with '''vagrant ssh'''
+- clone this repo and ```cd``` into it 
+- do a ```vagrant up``` then ```vagrant provision```
+- ssh into the box with ```vagrant ssh```
