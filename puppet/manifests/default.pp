@@ -3,6 +3,9 @@ Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 exec { 'add-nodesource-repo':
 	command => "curl -sL https://deb.nodesource.com/setup | sudo bash -",
 }
+exec { 'add-ubuntu-git-maintainers-repo':
+	command => "add-apt-repository ppa:git-core/ppa",
+}
 
 class system-update {
 	exec { 'apt-get update':
@@ -21,7 +24,13 @@ class js_packages {
     		ensure => "latest"
     }
 }
+class tools_packages {
+	package { "git":
+		ensure => "latest"
+	}
+}
 
 include system-update
 include system-upgrade
 include js_packages
+include tools_packages
