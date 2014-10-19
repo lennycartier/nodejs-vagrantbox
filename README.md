@@ -3,8 +3,7 @@
 This is a nodejs vagrant box with the following features :
 
 * ubuntu trusty 64 base box
-* nodejs 
-* other installed packages 
+* latest nodejs, git 
 * test.js file to easily try nodejs
 * the guest listens on 127.0.0.1:8080 the host on 127.0.0.1:1337
 
@@ -15,3 +14,7 @@ This is a nodejs vagrant box with the following features :
 - clone this repo and ```cd``` into it 
 - do a ```vagrant up``` then ```vagrant provision```
 - ssh into the box with ```vagrant ssh```
+
+## TODO : ##
+
+- install side packages like Grunt, Gulp, Broccoli, Brunch, Angular, Ember, PhantomJS, CasperJS, Weinre, Cordova/Phonegap, Mocha...
