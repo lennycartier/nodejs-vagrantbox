@@ -3,7 +3,7 @@
 This is a nodejs vagrant box with the following features :
 
 * ubuntu trusty 64 base box
-* latest nodejs, git 
+* latest nodejs, git, bower, grunt-cli
 * test.js file to easily try nodejs
 * the guest listens on 127.0.0.1:8080 the host on 127.0.0.1:1337
 
@@ -17,4 +17,4 @@ This is a nodejs vagrant box with the following features :
 
 ## TODO : ##
 
-- install side packages like Grunt, Gulp, Broccoli, Brunch, Angular, Ember, PhantomJS, CasperJS, Weinre, Cordova/Phonegap, Mocha...
+- install side packages like Gulp, Broccoli, Brunch, Angular, Ember, PhantomJS, CasperJS, Weinre, Cordova/Phonegap, Mocha...
