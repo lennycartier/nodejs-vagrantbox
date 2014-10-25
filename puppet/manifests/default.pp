@@ -29,8 +29,21 @@ class tools_packages {
 		ensure => "latest"
 	}
 }
+class bower_install {
+	exec { 'install-bower':
+		command => 'npm install -g bower',
+	}
+}
+
+class grunt_install {
+        exec { 'install-grunt':
+                command => 'npm install -g grunt-cli',
+        }
+}
 
 include system-update
 include system-upgrade
 include js_packages
 include tools_packages
+include bower_install
+include grunt_install
